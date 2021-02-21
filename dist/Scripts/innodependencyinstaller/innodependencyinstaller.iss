@@ -100,6 +100,10 @@ WindowsServicePack=Windows %1 Service Pack %2
 #include "products\dotnetfx47.iss"
 #endif
 
+#ifdef use_dotnetfx48
+#include "products\dotnetfx48.iss"
+#endif
+
 #ifdef use_wic
 #include "products\wic.iss"
 #endif
@@ -250,6 +254,11 @@ begin
 #ifdef use_dotnetfx47
 	dotnetfx47(50); // min allowed version is 4.5.0
 #endif
+
+#ifdef use_dotnetfx48
+	dotnetfx48(71); // min allowed version is 4.8.0
+#endif
+
 
 #ifdef use_vc2005
 	vcredist2005('6'); // min allowed version is 6.0

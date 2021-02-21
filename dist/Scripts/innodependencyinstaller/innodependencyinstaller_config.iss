@@ -26,6 +26,7 @@
 ;#define use_dotnetfx45
 ;#define use_dotnetfx46
 ;#define use_dotnetfx47
+#define use_dotnetfx48
 
 #define use_msiproduct
 ;#define use_vc2005
